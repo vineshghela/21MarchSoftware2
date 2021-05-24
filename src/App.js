@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import First from "./Components/01-Intro/First";
+// import Second from "./Components/01-Intro/Second";
 
-function App() {
+import Container from "./Components/02-Parent-Child/Container"
+import Parent from "./Components/03-Props/01-Simple/Parent"
+import PropsWithDifferentTypes from "./Components/03-Props/02-Intermediate/PropsWithDifferentTypes"
+import Start from "./Components/03-Props/ContactCard/Start"
+import WIPContact from "./Components/03-Props/ContactCard/WIPContact"
+
+
+const App=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Container/> */}
+      {/* <Parent/> */}
+      {/* <PropsWithDifferentTypes/> */}
+      {/* <Start/> */}
+      <WIPContact/>
     </div>
   );
 }
