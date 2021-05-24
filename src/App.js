@@ -6,6 +6,7 @@ import Parent from "./Components/03-Props/01-Simple/Parent"
 import PropsWithDifferentTypes from "./Components/03-Props/02-Intermediate/PropsWithDifferentTypes"
 import Start from "./Components/03-Props/ContactCard/Start"
 import WIPContact from "./Components/03-Props/ContactCard/WIPContact"
+import Blog from "./Components/03-Props/staticDataTask/Blog"
 
 
 const App=()=> {
@@ -15,7 +16,8 @@ const App=()=> {
       {/* <Parent/> */}
       {/* <PropsWithDifferentTypes/> */}
       {/* <Start/> */}
-      <WIPContact/>
+      {/* <WIPContact/> */}
+      <Blog/>
     </div>
   );
 }
