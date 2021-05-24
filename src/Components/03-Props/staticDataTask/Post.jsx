@@ -2,17 +2,16 @@ import PropTypes from 'prop-types';
 
 const Post = (props)=>{
 
-    const {id,title,userId} = props
+    const {id,title,userId,body} = props
 
     return (
-        <>
-        <div id={id} >
-            <h1>{props.headerText}</h1>
-            <p>{userId}</p>
-            <p>{title}</p>
-            {/* <p>{body}</p> */}
-        </div>
-        </>
+        <tr>
+            <td>{props.headerText}</td>
+            <td>{userId}</td>
+            <td>{title}</td>
+            <td>{body}</td>
+        
+        </tr>
     )
 }
 
