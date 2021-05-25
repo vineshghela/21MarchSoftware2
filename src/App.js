@@ -10,11 +10,18 @@ import WIPContact from "./Components/03-Props/ContactCard/WIPContact"
 import Blog from "./Components/03-Props/staticDataTask/Blog"
 import Comments from "./Components/03-Props/staticDataTask/Comments"
 import ClassClock from "./Components/04-LifeCycle/ClassClock"
+import Counter from "./Components/05-States/Counter"
+import Different from "./Components/05-States/Different"
+import ControlledInput from "./Components/06-Forms/ControlledInput"
 
 
 const App=()=> {
+
+
+  const date=  new Date();
   return (
     <div>
+      {/* <p>{date.toLocaleTimeString()}</p> */}
       {/* <Second/> */}
       {/* <Container/> */}
       {/* <Parent/> */}
@@ -23,7 +30,10 @@ const App=()=> {
       {/* <WIPContact/> */}
       {/* <Blog/> */}
       {/* <Comments/> */}
-      <ClassClock/>
+      {/* <ClassClock/> */}
+      {/* <Counter/> */}
+      {/* <Different/> */}
+      <ControlledInput/>
     </div>
   );
 }

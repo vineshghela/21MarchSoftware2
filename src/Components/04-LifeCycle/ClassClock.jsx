@@ -70,13 +70,8 @@ class ClassClock extends Component {
         <h1>{this.state.text}</h1>
         <h2>It is {this.state.date.toLocaleTimeString()}</h2>
         <button onClick={this.stateHandle}>Changes State</button>
-        <button onClick={this.stateHandle2}>
-          Changes State and stops timer
-        </button>
-
-        <button onClick={this.shouldHandle}>
-          Changes shouldComponentUpdate
-        </button>
+        <button onClick={this.stateHandle2}>Changes State and stops timer</button>
+        <button onClick={this.shouldHandle}>Changes shouldComponentUpdate</button>
       </div>
     );
   }
