@@ -11,17 +11,18 @@ const Blog = () => {
       <h1>hello</h1>
       <table>
           <thead>
-              <row>
+              <tr>
                   <th>ID</th>
                   <th>title</th>
                   <th>userId</th>
                   <th>Body</th>
-              </row>
+              </tr>
 
           </thead>
           <tbody>
               
-        {blogPost.map((data, index) => (
+        {
+        blogPost.map((data, index) => (
             <Post
             key={index}
             id={data.id}
