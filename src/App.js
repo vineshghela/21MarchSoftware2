@@ -13,6 +13,7 @@ import ClassClock from "./Components/04-LifeCycle/ClassClock"
 import Counter from "./Components/05-States/Counter"
 import Different from "./Components/05-States/Different"
 import ControlledInput from "./Components/06-Forms/ControlledInput"
+import SearchableList from "./Components/07-LifitingStates/SearchableList"
 
 
 const App=()=> {
@@ -21,7 +22,7 @@ const App=()=> {
   const date=  new Date();
   return (
     <div>
-      {/* <p>{date.toLocaleTimeString()}</p> */}
+      <p>{date.toLocaleTimeString()}</p>
       {/* <Second/> */}
       {/* <Container/> */}
       {/* <Parent/> */}
@@ -33,7 +34,8 @@ const App=()=> {
       {/* <ClassClock/> */}
       {/* <Counter/> */}
       {/* <Different/> */}
-      <ControlledInput/>
+      {/* <ControlledInput/> */}
+      <SearchableList/>
     </div>
   );
 }
