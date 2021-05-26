@@ -1,9 +1,13 @@
 const List = ({ list, query, completed }) => {
     //list is our data 
-    //query is what we are searching by 
-    //Completed is if the checkBox has been ticked or not
+    // query is what we are searching by 
+    // Completed is weather the checkBox has been ticked or not
 
-    const filterComplete = () => (list)=> list.completed === completed;
+    const complete = () => (list)=> list.completed === completed;
+
+    // const complete = function(list){
+    //     return list.completed === completed
+    // } 
     // let complete = function complete(completed) {
     //     return function (list) {
     //       return list.completed === completed;
@@ -22,7 +26,9 @@ const List = ({ list, query, completed }) => {
     //if true 
     if(completed){
         //filter the data first by if it completed and then by the query IF THERE IS A QUERY and assign the data to filteredList
-        filteredList = list.filter(filterComplete()).filter(filterQuery())
+        filteredList = list.filter(complete).filter(filterQuery())
+        // filter based on completed first
+        // then filter based on query
     }else{
         //filter based on the query and assign the data to filteredList
         filteredList = list.filter(filterQuery())
@@ -33,10 +39,7 @@ const List = ({ list, query, completed }) => {
       {filteredList.map((tempVal) => (
         <div key={tempVal.id}>
           <h3>{tempVal.title}</h3>
-          {
-              tempVal.completed? <p style={{textDecoration:"line-through", color:"red"}}>Complete</p>: <p>False</p>
-          }
-          {/* <input type="checkbox" checked={tempVal.completed} readOnly /> */}
+          <input type="checkbox" checked={tempVal.completed} readOnly />
         </div>
       ))}
     </>
